@@ -1,12 +1,14 @@
 .logo {
-    width: 10px;
-    height: 10px;
+    padding-top: 1%;
+    width: 2px;
+    height: 2px;
     float: left;
+    padding-left: 1%;
 }
 
-.citylogo{
-    width: 150px;
-    height: 130px;
+.citylogo {
+    width: 120px;
+    height: 100px;
 }
 
 body {
@@ -16,22 +18,24 @@ body {
     background-color: #f4f4f4;
 }
 
-.header {
-    background-color: #333;
-    color: #fff;
+.navbar {
+    background: linear-gradient(to left, #1096fe, #05336d);
     padding: 10px;
-    /* text-align: center; */
 }
 
 .menu {
-    padding-left: 50%;
-    width: 600px;
-    margin: 20px auto;
+    padding-left: 45%;
+    padding-top:2%;
+    padding-bottom: 2%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    box-sizing: border-box;
 }
 
 .menu-item {
+    font-weight: bold;
+    font-size: larger;
     height: 50px;
     line-height: 50px;
     cursor: pointer;
@@ -57,12 +61,31 @@ body {
     background-color: #0056b3;
 }
 
-.content {
-    width: 80%;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.agent-signup-button {
+    border: 2px solid rgb(177, 34, 34);
+    transition: background-color 0.3s ease-in-out;
+    color: #000000;
+    font-weight: bolder;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
+.agent-signup-button:hover {
+    background-color: rgb(177, 34, 34);
+    color:white;
+}
+
+.content {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    /* margin-top: 4%; */
+    /* Adjust as needed */
+    background-color: #f4f4f4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Additional adjustments may be needed based on your specific content and layout */
