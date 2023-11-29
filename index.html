@@ -18,12 +18,49 @@
                 <div class="menu-item" onclick="window.location.href='services.html'">Services</div>
                 <div class="menu-item" onclick="window.location.href='contact.html'">Contact</div>
                 <div class="menu-item" onclick="window.location.href='blog.html'">Blog</div>
-                <button class="agent-signup-button" onclick="window.location.href='agent_signup.html'">Agent Signup</button>
-                <button class="get-app-button" onclick="window.location.href='get_app.html'">Get App</button>
+                <button class="agent-signup-button" onclick="openWebsite()">Agent Signup</button>
+                <button class="get-app-button" onclick="showOptions()">Get App</button>
+
+                <div class="overlay" id="overlay" onclick="hideOptions()"></div>
+
+                <div class="popup" id="optionsPopup">
+                    <div class="options-content">
+                        <button class="popup-button" onclick="downloadApp('android')">Android</button>
+                        <button class="popup-button" onclick="downloadApp('iphone')">iOS</button>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content">
             <h1>Home Page</h1>
         </div>
     </body>
+    <script>
+        function showOptions() {
+            var popup = document.getElementById("optionsPopup");
+            var overlay = document.getElementById("overlay");
+            popup.style.display = "block";
+            overlay.style.display = "block";
+        }
+
+        function hideOptions() {
+            var popup = document.getElementById("optionsPopup");
+            var overlay = document.getElementById("overlay");
+            popup.style.display = "none";
+            overlay.style.display = "none";
+        }
+
+        function downloadApp(platform) {
+            hideOptions();
+
+            if (platform === "android") {
+                window.location.href = 'https://play.google.com/store/apps/details?id=com.ctxpress.citypay';
+            } else if (platform === "iphone") {
+                window.location.href = 'https://apps.apple.com/app/your_app_name/id123456789';
+            }
+        }
+        function openWebsite() {
+            window.location.href = "https://agent.citywallet.com.np/";
+        }
+    </script>
 </html>
