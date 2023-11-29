@@ -5,64 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>City Pay</title>
         <link rel="stylesheet" type="text/css" href="styles/styles.css">
-        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbs5DlQ7Pq3+u7yz4v6ZsVO9UJ0U2aJ5eW6sKzfl5H6PZL7jgeOkP5eB2OwKlW8" crossorigin="anonymous"> -->
+
+        <script src="/scripts/scripts.js"></script>
     </head>
     <body>
-        <div class="navbar">
-            <div class="logo">
-                <img src="assets/citywallet_logo.png" alt="CityPay logo" class="citylogo" onclick="window.location.href='index.html'">
-            </div>
-            <div class="menu">
-                <div class="menu-item" onclick="window.location.href='index.html'">Home</div>
-                <div class="menu-item" onclick="window.location.href='about.html'">About</div>
-                <div class="menu-item" onclick="window.location.href='services.html'">Services</div>
-                <div class="menu-item" onclick="window.location.href='contact.html'">Contact</div>
-                <div class="menu-item" onclick="window.location.href='blog.html'">Blog</div>
-                <button class="agent-signup-button" onclick="openWebsite()">Agent Signup</button>
-                <button class="get-app-button" onclick="showOptions()">Get App</button>
-
-                <div class="overlay" id="overlay" onclick="hideOptions()"></div>
-
-                <div class="popup" id="optionsPopup">
-                    <div class="options-container">
-                        <div class="options-content">
-                            <button class="popup-button" onclick="downloadApp('android')">Android</button>
-                            <button class="popup-button" onclick="downloadApp('iphone')">IOS</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="content">
             <h1>Home Page</h1>
         </div>
     </body>
-    <script>
-        function showOptions() {
-            var popup = document.getElementById("optionsPopup");
-            var overlay = document.getElementById("overlay");
-            popup.style.display = "block";
-            overlay.style.display = "block";
-        }
-
-        function hideOptions() {
-            var popup = document.getElementById("optionsPopup");
-            var overlay = document.getElementById("overlay");
-            popup.style.display = "none";
-            overlay.style.display = "none";
-        }
-
-        function downloadApp(platform) {
-            hideOptions();
-
-            if (platform === "android") {
-                window.location.href = 'https://play.google.com/store/apps/details?id=com.ctxpress.citypay';
-            } else if (platform === "iphone") {
-                window.location.href = 'https://apps.apple.com/app/your_app_name/id123456789';
-            }
-        }
-        function openWebsite() {
-            window.location.href = "https://agent.citywallet.com.np/";
-        }
-    </script>
 </html>
