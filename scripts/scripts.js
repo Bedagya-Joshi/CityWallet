@@ -1,28 +1,21 @@
-function showOptions() {
-    var popup = document.getElementById("optionsPopup");
-    var overlay = document.getElementById("overlay");
-    popup.style.display = "block";
-    overlay.style.display = "block";
-}
-
-function hideOptions() {
-    var popup = document.getElementById("optionsPopup");
-    var overlay = document.getElementById("overlay");
-    popup.style.display = "none";
-    overlay.style.display = "none";
-}
-
-function downloadApp(platform) {
-    hideOptions();
-
-    if (platform === "android") {
-        window.location.href ="https://play.google.com/store/apps/details?id=com.ctxpress.citypay";
-    } else if (platform === "iphone") {
-        window.location.href ="https://apps.apple.com/nz/app/citypay-nepal/id1643110573";
-    }
-}
 function openWebsite() {
-    window.location.href = "https://agent.citywallet.com.np/";
+    window.location.href = "https://agent.citywallet.com.np/auth/signup";
+}
+
+function androidDownload() {
+    window.location.href ="https://play.google.com/store/apps/details?id=com.ctxpress.citypay";
+}
+
+function iosDownload() {
+    window.location.href ="https://apps.apple.com/nz/app/citypay-nepal/id1643110573";
+}
+
+function facebookPage() {
+    window.location.href ="https://www.facebook.com/";
+}
+
+function instaPage() {
+    window.location.href ="https://www.instagram.com/";
 }
 
 document.addEventListener("DOMContentLoaded", function () {

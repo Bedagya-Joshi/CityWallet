@@ -1,25 +1,22 @@
 <div class="navbar">
-            <div class="logo">
-                <img src="assets/citywallet_logo.png" alt="CityPay logo" class="citylogo" onclick="window.location.href='index.html'">
-            </div>
-            <div class="menu">
-                <div class="menu-item" onclick="window.location.href='index.html'">Home</div>
-                <div class="menu-item" onclick="window.location.href='about.html'">About</div>
-                <div class="menu-item" onclick="window.location.href='services.html'">Services</div>
-                <div class="menu-item" onclick="window.location.href='contact.html'">Contact</div>
-                <div class="menu-item" onclick="window.location.href='blog.html'">Blog</div>
-                <button class="agent-signup-button" onclick="openWebsite()">Agent Signup</button>
-                <button class="get-app-button" onclick="showOptions()">Get App</button>
-
-                <div class="overlay" id="overlay" onclick="hideOptions()"></div>
-
-                <div class="popup" id="optionsPopup">
-                    <div class="options-container">
-                        <div class="options-content">
-                            <button class="popup-button" onclick="downloadApp('android')">Android</button>
-                            <button class="popup-button" onclick="downloadApp('iphone')">IOS</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="logo">
+        <img src="assets/citywallet_logo.png" alt="CityPay logo" class="citylogo" onclick="window.location.href='index.html'">
+    </div>
+    <div class="top-right">
+        <div class="menu">
+            <button class="agent-signup-button" onclick="openWebsite()">Agent Signup</button>
+            <img src="assets/gplay.png" alt="Google Play Download" class="gpay" onclick="androidDownload()">
+            <img src="assets/apple_pay.png" alt="Apple Store Download" class="apay" onclick="iosDownload()">
         </div>
+    </div>
+    <div class="bottom-bar">
+        <div class="menu">
+            <div class="menu-item" onclick="window.location.href='services.html'">Services</div>
+            <div class="menu-item" onclick="window.location.href='about.html'">About</div>
+            <div class="menu-item" onclick="window.location.href='contact.html'">Contact</div>
+            <div class="menu-item" onclick="window.location.href='blog.html'">Blog</div>
+            <img src="assets/fb_logo.png" alt="Facebook" class="face_logo" onclick="facebookPage()">
+            <img src="assets/ig_logo.png" alt="Instagram" class="ig_logo" onclick="instaPage()">
+        </div>
+    </div>
+</div>
